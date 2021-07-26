@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: johnconn 
+description: johnconn's personal website 
 
-url: http://long-haul.netlify.app
+url: https://github.com/jconn/jconn.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -16,19 +16,12 @@ paginate: 5
 navigation:
   - title: Home
     url: /index.html
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-  linkedin: brianmaierjr
+  github: jconn 
+  email: john.will.connolly@gmail.com
 
-google_analytics: "UA-58263416-1"
+#google_analytics: "UA-58263416-1"
 
-disqus:
-    shortname: brianmaierjr
+#disqus:
+#    shortname: brianmaierjr

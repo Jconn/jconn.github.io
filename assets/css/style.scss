@@ -1,3 +1,6 @@
+---
+---
+/* The two lines up above tell jekyll to process the file
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -806,7 +809,7 @@ HEADER STYLING
   background-position: center center;
   color: white;
   padding: 0;
-  height: 3em; }
+  height: 1em; }
   .header .container {
     padding: 0;
     max-width: 100%; }
@@ -818,7 +821,7 @@ HEADER STYLING
     line-height: 3em;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
-    text-transform: uppercase; }
+    text-transform: lowercase; }
     .header h1 a {
       color: white;
       text-decoration: none; }
@@ -1052,9 +1055,9 @@ HOMEPAGE STYLING
 HEADER STYLING
 ***************/
   .header {
-    height: 15em;
-    position: relative;
-    padding-bottom: 2em; }
+    height: 30em;
+    position:1 relative;
+    padding-bottom: 10em; }
     .header .container {
       position: relative;
       top: 50%;
