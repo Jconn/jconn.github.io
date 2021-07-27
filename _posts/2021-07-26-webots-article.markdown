@@ -22,7 +22,10 @@ After asking some quesions on the Webots discord I simplified my design, and onl
 
 
 The next step was creating a controller to move my delta's motors. Webots has a python interface for ROS2 (which they might be [deprecating](https://github.com/cyberbotics/webots_ros2/issues/227#issuecomment-853150841){:target="_blank"}), that made it really easy for me to set up a motor test and verify that my delta was operating correctly.
+
+
 ![Alt Text](/assets/gif/delta_movement.gif)
+
 
 
 Overall, Webots felt pretty nice to use. It took me a little while to get used to some of the differences in Webots and Gazebo when constructing my robot, but once I learned those things robot construction and control went pretty smoothly. 
