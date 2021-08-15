@@ -2,10 +2,11 @@
 layout: post
 title:  "Building a Delta Robot in Webots"
 date:   2021-07-27
-image: delta_title.png
+pimage: /assets/gif/delta_movement.gif
+description: A Gazebo developers perspective 
 ---
 
-<p class="intro"><span class="dropcap"></span></p>
+
 
 I've been using Gazebo with ROS2 for the past two years. Recently, a coworker wanted to evaluate webots. Their interest got me interested, and so I thought I'd give it a try.
 
