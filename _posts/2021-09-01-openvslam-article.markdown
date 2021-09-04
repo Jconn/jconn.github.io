@@ -3,7 +3,7 @@ layout: post
 title:  "Adding sensor fusion to openvslam: does it help?"
 date:   2021-09-02
 pimage: /assets/img/title_picture_openvslam.png
-description: Can off the shelf ros packages give openvslam an accuracy boost?   
+description: Can off the shelf ros packages give openvslam a boost?
 ---
 
 
