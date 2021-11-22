@@ -1,0 +1,43 @@
+---
+[layout](layout): post
+title:  "First thoughts on Rust"
+date:   2021-11-15
+description: A software/firmware/roboticist's thoughts on rust
+---
+
+
+my background:
+-built firmware for small companies in c and c++
+-written a lot of smaller python scripts for GUIs and data analysis
+-written c++/python packages for ROS2
+
+The first thing I heard about rust is that it was a language designed for efficient code execution and strong compile-time guarantees on code safety.
+People said it was as fast as c++, without the pitfalls and footguns. 
+Then a few months ago I started seeing activity from the ROS rust working group, and some posts from nordic on writing nrf52 firmware in rust.
+My brother has been involved with rust for a while, so I wanted to try out rust and see what I was missing. 
+
+I've spent about a month now working on a slippy map first with iced, and I wanted to write down my first impressions. I write code in neovim with the rust-analyzer language server. rust-analyzer works pretty well, it's fast, it follows definitions every time, even from imported crates. Finding references to variables, and functions also works every time. Syntax errors are sometimes picked up too quickly to be helpful, there are times when I'm in the middle of changing a function and I get a sea of underlined red in my file that distracts from the task. There are also times when compiler errors reference a line of code that is causing an error. In this case, rust-analyzer doesn't mention the original error but only embeds the error text for the line, which makes it hard to understand what the problem is.
+
+cargo as a package manager feels very nice to use, its very easy to look up crates and just as easy to use those crates in my project, it feels just as nice as using pip without any of the awkwardness of using a virtual environment to containerize the packages related to your project. Its also much nicer than my experiences with cpp, where cmake _can_ work to give you package importing but relies on the package of interest choosing to use cmake and writing their cmake recipe correctly. 
+
+Writing code has been a mixed bag for me so far. All the things that stop bugs at compile time also make it harder for me to get my code compiling. I'm new to the language though, so I don't know how much of my trouble comes from being new and how much comes from rust being hard to write. Something I like about python is that it feels like writing psuedo-code; I don't have to spend a lot of time translating the design in my head to the code in my computer. Rust does not give me that feeling so far. 
+
+Something I've noticed on the project I'm working on is that there haven't been many bugs when running my program. The language has done a great job at making sure the code I'm writing works without any unintended behavior. This is a huge plus and is extremely valuable in environments when bugs are expensive and  The language has done a great job at making sure the code I'm writing works without any unintended behavior. This is a huge plus and is extremely valuable in environments when bugs are expensive and  The language has done a great job at making sure the code I'm writing works without any unintended behavior. This is a huge plus and is extremely valuable in environments when bugs are expensive and  The language has done a great job at making sure the code I'm writing works without any unintended behavior. This is a huge plus and is extremely valuable in environments where bugs are expensive (e.g. professional codebase, codebase used by more than one person). 
+
+Sometimes though, I do like being able to see my buggy messed up code run a little faster. After getting my first iteration of my application running, I realized that i had a flaw in my design, and that I'd have to rethink how I was doing things. In a less controlled language like cpp, I would have reached this first iteration quicker (even though it may have been hiding some nasty bugs) and been moving on to my design improvements faster.
+
+I haven't dug into writing firmware in rust. Thematically, I think its a great fit. I've had my fair share of bugs that boil down to invalid memory accesses and improper implicit type conversions, and rust should stop those from happening. I've seen atleast one person say that it's painful to get rust to allow the unsafe things that need to be done to interact with mmio, but I'll take a little pain at compile time over a lot of pain tracking bugs at run-time.
+
+
+The things I really like:
+-cargo and the ease of using other packages
+-the compiler error messages
+-Some bugs are forced out of my program due to syntax/compiler 
+
+
+things I don't like:
+-the compiler error messages
+-its hard to make the code do what I want
+
+
+    

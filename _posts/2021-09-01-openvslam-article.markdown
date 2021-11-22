@@ -1,5 +1,5 @@
 ---
-layout: post
+[layout](layout): post
 title:  "Adding sensor fusion to openvslam: does it help?"
 date:   2021-09-02
 pimage: /assets/img/title_picture_openvslam.png
@@ -38,5 +38,5 @@ At 5hz, there are just not enough frames to capture motion accurately, whereas t
 What I learned is that its pretty hard to improve the baseline performance of openvslam. And on the EuRoC dataset, there hardly seems to be a need to improve that performance. Where additional sensor modalities will really shine is where the camera framerate is too low to capture camera motion.
 
 
-As always, this work can be found on my [my github](https://github.com/Jconn/openvslam_testing){:target="_blank"}. 
+As always, this work can be found on my [github](https://github.com/Jconn/openvslam_testing){:target="_blank"}. 
 
