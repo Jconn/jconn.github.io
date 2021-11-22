@@ -29,15 +29,4 @@ Sometimes though, I do like being able to see my buggy messed up code run a litt
 I haven't dug into writing firmware in rust. Thematically, I think its a great fit. I've had my fair share of bugs that boil down to invalid memory accesses and improper implicit type conversions, and rust should stop those from happening. I've seen atleast one person say that it's painful to get rust to allow the unsafe things that need to be done to interact with mmio, but I'll take a little pain at compile time over a lot of pain tracking bugs at run-time.
 
 
-The things I really like:
--cargo and the ease of using other packages
--the compiler error messages
--Some bugs are forced out of my program due to syntax/compiler 
-
-
-things I don't like:
--the compiler error messages
--its hard to make the code do what I want
-
-
     
